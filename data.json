@@ -1,0 +1,542 @@
+{
+  "config": {
+    "weights": {
+      "skills": 0.45,
+      "major": 0.25,
+      "interests": 0.20,
+      "experience": 0.10
+    },
+
+    "level_labels": {
+      "1": "مبتدئ",
+      "2": "متمكن",
+      "3": "متقدم",
+      "4": "خبير"
+    },
+
+    "level_descriptions": {
+      "1": "أعرف الأساسيات وأحتاج إشرافًا مستمرًا",
+      "2": "أستطيع العمل باستقلالية في المهام البسيطة",
+      "3": "أنجز المهام المعقدة وأحل المشكلات بثقة",
+      "4": "أمتلك خبرة عميقة وأستطيع تعليم الآخرين"
+    },
+
+    "experience_labels": {
+      "0": "لا توجد خبرة",
+      "1": "مشاريع جامعية فقط",
+      "2": "مشروع شخصي أو تطوعي",
+      "3": "تدريب قصير (أقل من 3 أشهر)",
+      "4": "تدريب ممتد (3-6 أشهر)",
+      "5": "خبرة عمل أو تدريب احترافي"
+    },
+
+    "majors": [
+      "علوم الحاسب",
+      "هندسة البرمجيات",
+      "نظم المعلومات",
+      "الذكاء الاصطناعي",
+      "هندسة الحاسب",
+      "الأمن السيبراني",
+      "علوم البيانات",
+      "تقنية المعلومات"
+    ],
+
+    "academic_levels": [
+      "المستوى الأول",
+      "المستوى الثاني",
+      "المستوى الثالث",
+      "المستوى الرابع",
+      "المستوى الخامس",
+      "المستوى السادس",
+      "المستوى السابع",
+      "المستوى الثامن",
+      "متوقع التخرج"
+    ],
+
+    "interests": [
+      "تحليل البيانات",
+      "الذكاء الاصطناعي",
+      "تطوير الويب",
+      "واجهات المستخدم وتجربة المستخدم",
+      "الحوسبة السحابية",
+      "الأمن السيبراني",
+      "البحث والتطوير",
+      "إدارة المنتجات",
+      "تطوير تطبيقات الجوال",
+      "DevOps"
+    ],
+
+    "interest_aliases": {
+      "data analysis": "تحليل البيانات",
+      "data analytics": "تحليل البيانات",
+      "analytics": "تحليل البيانات",
+      "تحليل بيانات": "تحليل البيانات",
+
+      "ai": "الذكاء الاصطناعي",
+      "artificial intelligence": "الذكاء الاصطناعي",
+      "ذكاء اصطناعي": "الذكاء الاصطناعي",
+
+      "web development": "تطوير الويب",
+      "web dev": "تطوير الويب",
+      "frontend": "تطوير الويب",
+      "backend": "تطوير الويب",
+      "تطوير ويب": "تطوير الويب",
+
+      "ui/ux": "واجهات المستخدم وتجربة المستخدم",
+      "ux": "واجهات المستخدم وتجربة المستخدم",
+      "ui": "واجهات المستخدم وتجربة المستخدم",
+      "user experience": "واجهات المستخدم وتجربة المستخدم",
+      "تجربة المستخدم": "واجهات المستخدم وتجربة المستخدم",
+      "واجهات المستخدم": "واجهات المستخدم وتجربة المستخدم",
+
+      "cloud": "الحوسبة السحابية",
+      "cloud computing": "الحوسبة السحابية",
+      "aws": "الحوسبة السحابية",
+      "azure": "الحوسبة السحابية",
+      "سحابة": "الحوسبة السحابية",
+
+      "cybersecurity": "الأمن السيبراني",
+      "cyber security": "الأمن السيبراني",
+      "security": "الأمن السيبراني",
+      "أمن سيبراني": "الأمن السيبراني",
+      "أمن المعلومات": "الأمن السيبراني",
+
+      "r&d": "البحث والتطوير",
+      "research": "البحث والتطوير",
+      "research and development": "البحث والتطوير",
+      "بحث وتطوير": "البحث والتطوير",
+
+      "product management": "إدارة المنتجات",
+      "product": "إدارة المنتجات",
+      "pm": "إدارة المنتجات",
+      "إدارة منتجات": "إدارة المنتجات",
+
+      "mobile development": "تطوير تطبيقات الجوال",
+      "mobile": "تطوير تطبيقات الجوال",
+      "android": "تطوير تطبيقات الجوال",
+      "ios": "تطوير تطبيقات الجوال",
+      "تطوير الجوال": "تطوير تطبيقات الجوال",
+      "تطبيقات الجوال": "تطوير تطبيقات الجوال",
+
+      "devops": "DevOps",
+      "dev ops": "DevOps",
+      "ci/cd": "DevOps"
+    },
+
+    "skill_aliases": {
+      "python": "Python",
+      "بايثون": "Python",
+      "sql": "SQL",
+      "قواعد البيانات": "SQL",
+      "database": "SQL",
+      "data analysis": "Data Analysis",
+      "تحليل البيانات": "Data Analysis",
+      "pandas": "Data Analysis",
+      "machine learning": "Machine Learning",
+      "ml": "Machine Learning",
+      "تعلم الآلة": "Machine Learning",
+      "deep learning": "Deep Learning",
+      "التعلم العميق": "Deep Learning",
+      "html": "HTML/CSS",
+      "css": "HTML/CSS",
+      "html/css": "HTML/CSS",
+      "javascript": "JavaScript",
+      "js": "JavaScript",
+      "react": "React",
+      "git": "Git",
+      "github": "Git",
+      "docker": "Docker",
+      "aws": "Cloud (AWS)",
+      "cloud": "Cloud (AWS)",
+      "cloud (aws)": "Cloud (AWS)",
+      "cybersecurity": "Cybersecurity Fundamentals",
+      "security": "Cybersecurity Fundamentals",
+      "الأمن السيبراني": "Cybersecurity Fundamentals",
+      "ui/ux": "UI/UX Design",
+      "ui/ux design": "UI/UX Design",
+      "figma": "UI/UX Design",
+      "flutter": "Mobile Development (Flutter)",
+      "mobile development (flutter)": "Mobile Development (Flutter)",
+      "testing": "Testing & QA",
+      "qa": "Testing & QA",
+      "communication": "Communication",
+      "التواصل": "Communication",
+      "teamwork": "Teamwork",
+      "العمل الجماعي": "Teamwork",
+      "project management": "Project Management",
+      "إدارة المشاريع": "Project Management"
+    },
+
+    "scoring": {
+      "skill_gap_penalty_per_level": 8.0,
+      "preferred_bonus_per_skill": 2.5,
+      "preferred_bonus_cap": 5.0,
+      "major_score_exact": 100.0,
+      "major_score_related": 65.0,
+      "major_score_none": 30.0,
+      "interest_neutral_score": 50.0,
+      "experience_overqualified_score": 100.0,
+      "experience_per_level_penalty": 25.0,
+      "default_target_level": 3,
+      "plan_max_tasks": 6
+    },
+
+    "score_bands": [
+      { "min": 85, "max": 100, "label": "مطابقة قوية جدًا", "color": "#16a34a" },
+      { "min": 70, "max": 85, "label": "مطابقة قوية", "color": "#65a30d" },
+      { "min": 55, "max": 70, "label": "مطابقة متوسطة", "color": "#d97706" },
+      { "min": 40, "max": 55, "label": "مطابقة ضعيفة", "color": "#ea580c" },
+      { "min": 0, "max": 40, "label": "مطابقة منخفضة", "color": "#dc2626" }
+    ],
+
+    "related_major_families": [
+      ["علوم الحاسب", "هندسة البرمجيات", "هندسة الحاسب"],
+      ["نظم المعلومات", "تقنية المعلومات"],
+      ["الذكاء الاصطناعي", "علوم البيانات"],
+      ["الأمن السيبراني", "نظم المعلومات", "تقنية المعلومات"]
+    ]
+  },
+
+
+  "learning_actions": {
+    "Python": {
+      "action": "أكمل مسار أساسيات Python المتقدم",
+      "evidence": "اجتز اختبار المستوى واحفظ الشهادة",
+      "resource": "freeCodeCamp — Scientific Computing with Python",
+      "resource_url": "https://www.freecodecamp.org/learn/scientific-computing-with-python/",
+      "estimated_hours": 30
+    },
+    "SQL": {
+      "action": "تدرب على استعلامات SQL متعددة الجداول",
+      "evidence": "حل 30 استعلامًا على منصة تدريب وإرفاق لقطات",
+      "resource": "SQLBolt",
+      "resource_url": "https://sqlbolt.com/",
+      "estimated_hours": 15
+    },
+    "Data Analysis": {
+      "action": "حلل مجموعة بيانات حقيقية باستخدام Pandas",
+      "evidence": "مشروع Jupyter Notebook مع استنتاجات مكتوبة",
+      "resource": "Kaggle Learn — Pandas",
+      "resource_url": "https://www.kaggle.com/learn/pandas",
+      "estimated_hours": 25
+    },
+    "Machine Learning": {
+      "action": "أكمل مسار تعلم الآلة التطبيقي",
+      "evidence": "شهادة إتمام المسار مع دفتر ملاحظات بالمشاريع",
+      "resource": "Coursera — Machine Learning Specialization",
+      "resource_url": "https://www.coursera.org/specializations/machine-learning-introduction",
+      "estimated_hours": 40
+    },
+    "Deep Learning": {
+      "action": "ابنِ شبكة عصبية لتطبيق عملي",
+      "evidence": "مشروع TensorFlow أو PyTorch مع تقرير دقة النموذج",
+      "resource": "DeepLearning.AI — Deep Learning Specialization",
+      "resource_url": "https://www.coursera.org/specializations/deep-learning",
+      "estimated_hours": 45
+    },
+    "HTML/CSS": {
+      "action": "أعد بناء موقع كامل متجاوب",
+      "evidence": "رابط الموقع المنشور مع كود المصدر",
+      "resource": "freeCodeCamp — Responsive Web Design",
+      "resource_url": "https://www.freecodecamp.org/learn/2022/responsive-web-design/",
+      "estimated_hours": 25
+    },
+    "JavaScript": {
+      "action": "أكمل مسار JavaScript الحديثة (ES6+)",
+      "evidence": "مشروع تطبيقي تفاعلي على GitHub",
+      "resource": "freeCodeCamp — JavaScript Algorithms and Data Structures",
+      "resource_url": "https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/",
+      "estimated_hours": 30
+    },
+    "React": {
+      "action": "ابنِ تطبيق واجهة بمكونات React معيارية",
+      "evidence": "تطبيق منشور مع مستودع GitHub منظم",
+      "resource": "React — Official Tutorial",
+      "resource_url": "https://react.dev/learn",
+      "estimated_hours": 30
+    },
+    "Git": {
+      "action": "أتقن سير عمل الفروع وطلبات الدمج",
+      "evidence": "مساهمة في مستودع مشترك مع Pull Requests",
+      "resource": "GitHub Skills",
+      "resource_url": "https://skills.github.com/",
+      "estimated_hours": 10
+    },
+    "Docker": {
+      "action": "حوّل مشروعك إلى صورة Docker قابلة للنشر",
+      "evidence": "ملف Dockerfile مع دليل تشغيل في README",
+      "resource": "Docker — Get Started",
+      "resource_url": "https://docs.docker.com/get-started/",
+      "estimated_hours": 15
+    },
+    "Cloud (AWS)": {
+      "action": "انشر مشروعك على السحابة",
+      "evidence": "رابط مباشر يثبت نجاح النشر",
+      "resource": "AWS Skill Builder",
+      "resource_url": "https://skillbuilder.aws/",
+      "estimated_hours": 25
+    },
+    "Cybersecurity Fundamentals": {
+      "action": "أكمل أساسيات الأمن السيبراني عمليًا",
+      "evidence": "إتمام مختبرات TryHackMe مع حفظ التقارير",
+      "resource": "TryHackMe — Pre Security Path",
+      "resource_url": "https://tryhackme.com/path/outline/presecurity",
+      "estimated_hours": 30
+    },
+    "UI/UX Design": {
+      "action": "صمم نموذجًا أوليًا كاملًا لتطبيق",
+      "evidence": "رابط Figma تفاعلي قابل للمشاركة",
+      "resource": "Figma — Learn Design",
+      "resource_url": "https://www.figma.com/resource-library/",
+      "estimated_hours": 25
+    },
+    "Mobile Development (Flutter)": {
+      "action": "ابنِ تطبيق جوال كاملًا باستخدام Flutter",
+      "evidence": "تطبيق يعمل مع مستودع GitHub",
+      "resource": "Flutter — Codelabs",
+      "resource_url": "https://docs.flutter.dev/get-started/codelab",
+      "estimated_hours": 35
+    },
+    "Testing & QA": {
+      "action": "اكتب اختبارات آلية لمشروع قائم",
+      "evidence": "مجموعة اختبارات ناجحة مع تقرير التغطية",
+      "resource": "Real Python — Testing",
+      "resource_url": "https://realpython.com/python-testing/",
+      "estimated_hours": 15
+    },
+    "Communication": {
+      "action": "قدّم عرضًا تقنيًا أمام جمهور",
+      "evidence": "تسجيل عرض مدته 5 دقائق أو شهادة مشاركة",
+      "resource": "نادي المناظرة الجامعي",
+      "resource_url": "https://www.toastmasters.org/",
+      "estimated_hours": 10
+    },
+    "Teamwork": {
+      "action": "شارك في مشروع جماعي بأدوار محددة",
+      "evidence": "تقرير يوضح دورك ومساهمتك",
+      "resource": "مشاريع النوادي الطلابية والهاكاثونات",
+      "resource_url": "https://www.mlh.io/",
+      "estimated_hours": 15
+    },
+    "Project Management": {
+      "action": "أدر مشروعًا صغيرًا باستخدام منهجية Agile",
+      "evidence": "لوحة مهام مع تقرير إنجاز",
+      "resource": "Atlassian Agile Coach",
+      "resource_url": "https://www.atlassian.com/agile",
+      "estimated_hours": 15
+    }
+  },
+
+  "opportunities": [
+    {
+      "opportunity_id": "opp_001",
+      "company": "أرامكو السعودية",
+      "position": "متدرب تحليل بيانات",
+      "description": "العمل على تحليل بيانات التشغيل وبناء لوحات معلومات لدعم اتخاذ القرار.",
+      "required_major": "علوم الحاسب",
+      "required_skills": [
+        { "name": "Python", "level": 3 },
+        { "name": "SQL", "level": 3 },
+        { "name": "Data Analysis", "level": 2 }
+      ],
+      "preferred_skills": [
+        { "name": "Machine Learning", "level": 2 },
+        { "name": "Communication", "level": 2 }
+      ],
+      "interests": ["تحليل البيانات", "الذكاء الاصطناعي"],
+      "min_experience_level": 2,
+      "location": "الظهران",
+      "duration_months": 3,
+      "is_paid": true
+    },
+    {
+      "opportunity_id": "opp_002",
+      "company": "stc",
+      "position": "متدرب تطوير ويب",
+      "description": "المشاركة في تطوير واجهات المستخدم لتطبيقات الشركة باستخدام تقنيات الويب الحديثة.",
+      "required_major": "هندسة البرمجيات",
+      "required_skills": [
+        { "name": "HTML/CSS", "level": 3 },
+        { "name": "JavaScript", "level": 3 },
+        { "name": "React", "level": 2 }
+      ],
+      "preferred_skills": [
+        { "name": "Git", "level": 3 },
+        { "name": "UI/UX Design", "level": 2 }
+      ],
+      "interests": ["تطوير الويب", "واجهات المستخدم وتجربة المستخدم"],
+      "min_experience_level": 2,
+      "location": "الرياض",
+      "duration_months": 3,
+      "is_paid": true
+    },
+    {
+      "opportunity_id": "opp_003",
+      "company": "نيوم",
+      "position": "متدرب ذكاء اصطناعي",
+      "description": "بناء نماذج تعلم آلة أولية لحلول المدن الذكية واختبارها على بيانات حقيقية.",
+      "required_major": "الذكاء الاصطناعي",
+      "required_skills": [
+        { "name": "Python", "level": 3 },
+        { "name": "Machine Learning", "level": 2 },
+        { "name": "SQL", "level": 2 }
+      ],
+      "preferred_skills": [
+        { "name": "Deep Learning", "level": 2 },
+        { "name": "Cloud (AWS)", "level": 2 }
+      ],
+      "interests": ["الذكاء الاصطناعي", "البحث والتطوير"],
+      "min_experience_level": 3,
+      "location": "تبوك",
+      "duration_months": 6,
+      "is_paid": true
+    },
+    {
+      "opportunity_id": "opp_004",
+      "company": "مصرف الراجحي",
+      "position": "متدرب أمن سيبراني",
+      "description": "المساعدة في مراقبة الأمن وتحليل الثغرات وحماية الأنظمة المصرفية.",
+      "required_major": "الأمن السيبراني",
+      "required_skills": [
+        { "name": "Cybersecurity Fundamentals", "level": 3 },
+        { "name": "Python", "level": 2 },
+        { "name": "SQL", "level": 2 }
+      ],
+      "preferred_skills": [
+        { "name": "Cloud (AWS)", "level": 2 },
+        { "name": "Communication", "level": 3 }
+      ],
+      "interests": ["الأمن السيبراني", "الحوسبة السحابية"],
+      "min_experience_level": 2,
+      "location": "الرياض",
+      "duration_months": 3,
+      "is_paid": true
+    },
+    {
+      "opportunity_id": "opp_005",
+      "company": "طيران ناس",
+      "position": "متدرب DevOps",
+      "description": "أتمتة عمليات النشر وإدارة الحاويات وتحسين موثوقية الأنظمة.",
+      "required_major": "نظم المعلومات",
+      "required_skills": [
+        { "name": "Docker", "level": 2 },
+        { "name": "Cloud (AWS)", "level": 2 },
+        { "name": "Git", "level": 3 }
+      ],
+      "preferred_skills": [
+        { "name": "Python", "level": 2 },
+        { "name": "Project Management", "level": 2 }
+      ],
+      "interests": ["DevOps", "الحوسبة السحابية"],
+      "min_experience_level": 3,
+      "location": "الرياض",
+      "duration_months": 4,
+      "is_paid": true
+    },
+    {
+      "opportunity_id": "opp_006",
+      "company": "شركة سلة",
+      "position": "متدرب تطوير تطبيقات جوال",
+      "description": "تطوير ميزات جديدة لتطبيق المتجر الإلكتروني باستخدام Flutter.",
+      "required_major": "هندسة البرمجيات",
+      "required_skills": [
+        { "name": "Mobile Development (Flutter)", "level": 2 },
+        { "name": "JavaScript", "level": 2 },
+        { "name": "Git", "level": 2 }
+      ],
+      "preferred_skills": [
+        { "name": "UI/UX Design", "level": 3 },
+        { "name": "Testing & QA", "level": 2 }
+      ],
+      "interests": ["تطوير تطبيقات الجوال", "واجهات المستخدم وتجربة المستخدم"],
+      "min_experience_level": 2,
+      "location": "الرياض",
+      "duration_months": 3,
+      "is_paid": true
+    },
+    {
+      "opportunity_id": "opp_007",
+      "company": "الهيئة العامة للإحصاء",
+      "position": "متدرب علوم بيانات",
+      "description": "تنظيف وتحليل البيانات الإحصائية وإعداد تقارير مساندة للقرارات.",
+      "required_major": "علوم البيانات",
+      "required_skills": [
+        { "name": "Python", "level": 2 },
+        { "name": "SQL", "level": 3 },
+        { "name": "Data Analysis", "level": 3 }
+      ],
+      "preferred_skills": [
+        { "name": "Machine Learning", "level": 1 },
+        { "name": "Communication", "level": 2 }
+      ],
+      "interests": ["تحليل البيانات", "البحث والتطوير"],
+      "min_experience_level": 2,
+      "location": "الرياض",
+      "duration_months": 5,
+      "is_paid": true
+    },
+    {
+      "opportunity_id": "opp_008",
+      "company": "شركة علم",
+      "position": "متدرب تجربة المستخدم",
+      "description": "تصميم واختبار واجهات المنتجات الرقمية وتحسين تجربة المستخدم.",
+      "required_major": "نظم المعلومات",
+      "required_skills": [
+        { "name": "UI/UX Design", "level": 3 },
+        { "name": "HTML/CSS", "level": 2 },
+        { "name": "Communication", "level": 3 }
+      ],
+      "preferred_skills": [
+        { "name": "JavaScript", "level": 1 },
+        { "name": "Project Management", "level": 2 }
+      ],
+      "interests": ["واجهات المستخدم وتجربة المستخدم", "إدارة المنتجات"],
+      "min_experience_level": 1,
+      "location": "الرياض",
+      "duration_months": 3,
+      "is_paid": false
+    },
+    {
+      "opportunity_id": "opp_009",
+      "company": "موبايلي",
+      "position": "متدرب هندسة سحابة",
+      "description": "دعم فِرق البنية التحتية السحابية ونشر الخدمات ومراقبتها.",
+      "required_major": "تقنية المعلومات",
+      "required_skills": [
+        { "name": "Cloud (AWS)", "level": 3 },
+        { "name": "Docker", "level": 2 },
+        { "name": "Git", "level": 2 }
+      ],
+      "preferred_skills": [
+        { "name": "Python", "level": 2 },
+        { "name": "Testing & QA", "level": 1 }
+      ],
+      "interests": ["الحوسبة السحابية", "DevOps"],
+      "min_experience_level": 3,
+      "location": "الرياض",
+      "duration_months": 6,
+      "is_paid": true
+    },
+    {
+      "opportunity_id": "opp_010",
+      "company": "شركة جوجل (مكتب الرياض)",
+      "position": "متدرب تعلم آلة",
+      "description": "المساهمة في تطوير وتحسين نماذج التعلم الآلي في بيئة إنتاجية.",
+      "required_major": "الذكاء الاصطناعي",
+      "required_skills": [
+        { "name": "Python", "level": 4 },
+        { "name": "Machine Learning", "level": 3 },
+        { "name": "Deep Learning", "level": 2 }
+      ],
+      "preferred_skills": [
+        { "name": "Cloud (AWS)", "level": 3 },
+        { "name": "Communication", "level": 3 }
+      ],
+      "interests": ["الذكاء الاصطناعي", "البحث والتطوير"],
+      "min_experience_level": 4,
+      "location": "الرياض",
+      "duration_months": 6,
+      "is_paid": true
+    }
+  ]
+}
