@@ -284,6 +284,139 @@ st.markdown(
     .stProgress > div > div > div > div {
         background-color: #2E8B7F !important;
     }
+        /* شريط التقدم */
+    .stProgress > div > div > div > div {
+        background-color: #2E8B7F !important;
+    }
+
+    /* =========================
+       Mobile text visibility fix
+       ========================= */
+
+    @media (max-width: 768px) {
+
+        /* Force light rendering on mobile */
+        .stApp {
+            color-scheme: light !important;
+        }
+
+        /* Text inputs */
+        .stTextInput input,
+        .stTextArea textarea {
+            color: var(--text-dark) !important;
+            -webkit-text-fill-color: var(--text-dark) !important;
+            background-color: #FFFFFF !important;
+        }
+
+        .stTextInput input::placeholder,
+        .stTextArea textarea::placeholder {
+            color: var(--text-muted) !important;
+            -webkit-text-fill-color: var(--text-muted) !important;
+            opacity: 1 !important;
+        }
+
+        /* Selectbox and Multiselect */
+        div[data-baseweb="select"] > div,
+        div[data-baseweb="select"] input,
+        div[data-baseweb="select"] button,
+        .stSelectbox *,
+        .stMultiSelect * {
+            color: var(--text-dark) !important;
+            -webkit-text-fill-color: var(--text-dark) !important;
+        }
+
+        div[data-baseweb="select"] > div {
+            background-color: #FFFFFF !important;
+            border-color: var(--border-subtle) !important;
+        }
+
+        /* Dropdown / popup */
+        div[data-baseweb="popover"],
+        div[data-baseweb="popover"] > div,
+        div[data-baseweb="popover"] *,
+        ul[role="listbox"],
+        ul[role="listbox"] *,
+        li[role="option"],
+        li[role="option"] * {
+            background-color: #FFFFFF !important;
+            color: var(--text-dark) !important;
+            -webkit-text-fill-color: var(--text-dark) !important;
+        }
+
+        /* Widget labels */
+        [data-testid="stWidgetLabel"],
+        [data-testid="stWidgetLabel"] *,
+        [data-testid="stMarkdownContainer"] p,
+        [data-testid="stMarkdownContainer"] li {
+            color: var(--text-dark) !important;
+            -webkit-text-fill-color: var(--text-dark) !important;
+        }
+
+        /* Checkbox and radio text */
+        .stCheckbox label,
+        .stCheckbox label *,
+        .stRadio label,
+        .stRadio label * {
+            color: var(--text-dark) !important;
+            -webkit-text-fill-color: var(--text-dark) !important;
+        }
+
+        /* Multiselect selected tags */
+        [data-testid="stMultiSelect"] [data-baseweb="tag"],
+        [data-testid="stMultiSelect"] [data-baseweb="tag"] * {
+            background-color: var(--jisrak-teal) !important;
+            color: #FFFFFF !important;
+            -webkit-text-fill-color: #FFFFFF !important;
+        }
+
+        /* Primary buttons - keep white text */
+        div.stButton > button[kind="primary"],
+        div.stButton > button[data-testid="baseButton-primary"] {
+            color: #FFFFFF !important;
+            -webkit-text-fill-color: #FFFFFF !important;
+            background-color: var(--jisrak-blue) !important;
+        }
+
+        div.stButton > button[kind="primary"] *,
+        div.stButton > button[data-testid="baseButton-primary"] * {
+            color: #FFFFFF !important;
+            -webkit-text-fill-color: #FFFFFF !important;
+        }
+
+        /* Secondary buttons - dark text */
+        div.stButton > button[kind="secondary"],
+        div.stButton > button[data-testid="baseButton-secondary"] {
+            color: var(--jisrak-blue) !important;
+            -webkit-text-fill-color: var(--jisrak-blue) !important;
+            background-color: #FFFFFF !important;
+        }
+
+        div.stButton > button[kind="secondary"] *,
+        div.stButton > button[data-testid="baseButton-secondary"] * {
+            color: var(--jisrak-blue) !important;
+            -webkit-text-fill-color: var(--jisrak-blue) !important;
+        }
+
+        /* General Streamlit buttons */
+        div.stButton > button {
+            -webkit-text-fill-color: inherit;
+        }
+
+        /* Expander text */
+        [data-testid="stExpander"],
+        [data-testid="stExpander"] *,
+        [data-testid="stExpanderDetails"] {
+            color: var(--text-dark) !important;
+            -webkit-text-fill-color: var(--text-dark) !important;
+        }
+
+        /* Progress / status text */
+        [data-testid="stProgress"] *,
+        [data-testid="stStatusWidget"] * {
+            color: var(--text-dark) !important;
+            -webkit-text-fill-color: var(--text-dark) !important;
+        }
+    }
     </style>
     """,
     unsafe_allow_html=True,
