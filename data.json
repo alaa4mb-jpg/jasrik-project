@@ -3,24 +3,21 @@
     "weights": {
       "skills": 0.45,
       "major": 0.25,
-      "interests": 0.20,
-      "experience": 0.10
+      "interests": 0.2,
+      "experience": 0.1
     },
-
     "level_labels": {
       "1": "مبتدئ",
       "2": "متمكن",
       "3": "متقدم",
       "4": "خبير"
     },
-
     "level_descriptions": {
       "1": "أعرف الأساسيات وأحتاج إشرافًا مستمرًا",
       "2": "أستطيع العمل باستقلالية في المهام البسيطة",
       "3": "أنجز المهام المعقدة وأحل المشكلات بثقة",
       "4": "أمتلك خبرة عميقة وأستطيع تعليم الآخرين"
     },
-
     "experience_labels": {
       "0": "لا توجد خبرة",
       "1": "مشاريع جامعية فقط",
@@ -29,7 +26,6 @@
       "4": "تدريب ممتد (3-6 أشهر)",
       "5": "خبرة عمل أو تدريب احترافي"
     },
-
     "majors": [
       "علوم الحاسب",
       "هندسة البرمجيات",
@@ -40,7 +36,6 @@
       "علوم البيانات",
       "تقنية المعلومات"
     ],
-
     "academic_levels": [
       "المستوى الأول",
       "المستوى الثاني",
@@ -52,7 +47,6 @@
       "المستوى الثامن",
       "متوقع التخرج"
     ],
-
     "interests": [
       "تحليل البيانات",
       "الذكاء الاصطناعي",
@@ -65,64 +59,53 @@
       "تطوير تطبيقات الجوال",
       "DevOps"
     ],
-
     "interest_aliases": {
       "data analysis": "تحليل البيانات",
       "data analytics": "تحليل البيانات",
       "analytics": "تحليل البيانات",
       "تحليل بيانات": "تحليل البيانات",
-
       "ai": "الذكاء الاصطناعي",
       "artificial intelligence": "الذكاء الاصطناعي",
       "ذكاء اصطناعي": "الذكاء الاصطناعي",
-
       "web development": "تطوير الويب",
       "web dev": "تطوير الويب",
       "frontend": "تطوير الويب",
       "backend": "تطوير الويب",
       "تطوير ويب": "تطوير الويب",
-
       "ui/ux": "واجهات المستخدم وتجربة المستخدم",
       "ux": "واجهات المستخدم وتجربة المستخدم",
       "ui": "واجهات المستخدم وتجربة المستخدم",
       "user experience": "واجهات المستخدم وتجربة المستخدم",
       "تجربة المستخدم": "واجهات المستخدم وتجربة المستخدم",
       "واجهات المستخدم": "واجهات المستخدم وتجربة المستخدم",
-
       "cloud": "الحوسبة السحابية",
       "cloud computing": "الحوسبة السحابية",
       "aws": "الحوسبة السحابية",
       "azure": "الحوسبة السحابية",
       "سحابة": "الحوسبة السحابية",
-
       "cybersecurity": "الأمن السيبراني",
       "cyber security": "الأمن السيبراني",
       "security": "الأمن السيبراني",
       "أمن سيبراني": "الأمن السيبراني",
       "أمن المعلومات": "الأمن السيبراني",
-
       "r&d": "البحث والتطوير",
       "research": "البحث والتطوير",
       "research and development": "البحث والتطوير",
       "بحث وتطوير": "البحث والتطوير",
-
       "product management": "إدارة المنتجات",
       "product": "إدارة المنتجات",
       "pm": "إدارة المنتجات",
       "إدارة منتجات": "إدارة المنتجات",
-
       "mobile development": "تطوير تطبيقات الجوال",
       "mobile": "تطوير تطبيقات الجوال",
       "android": "تطوير تطبيقات الجوال",
       "ios": "تطوير تطبيقات الجوال",
       "تطوير الجوال": "تطوير تطبيقات الجوال",
       "تطبيقات الجوال": "تطوير تطبيقات الجوال",
-
       "devops": "DevOps",
       "dev ops": "DevOps",
       "ci/cd": "DevOps"
     },
-
     "skill_aliases": {
       "python": "Python",
       "بايثون": "Python",
@@ -166,7 +149,6 @@
       "project management": "Project Management",
       "إدارة المشاريع": "Project Management"
     },
-
     "scoring": {
       "skill_gap_penalty_per_level": 8.0,
       "preferred_bonus_per_skill": 2.5,
@@ -180,24 +162,59 @@
       "default_target_level": 3,
       "plan_max_tasks": 6
     },
-
     "score_bands": [
-      { "min": 85, "max": 100, "label": "مطابقة قوية جدًا", "color": "#16a34a" },
-      { "min": 70, "max": 85, "label": "مطابقة قوية", "color": "#65a30d" },
-      { "min": 55, "max": 70, "label": "مطابقة متوسطة", "color": "#d97706" },
-      { "min": 40, "max": 55, "label": "مطابقة ضعيفة", "color": "#ea580c" },
-      { "min": 0, "max": 40, "label": "مطابقة منخفضة", "color": "#dc2626" }
+      {
+        "min": 85,
+        "max": 100,
+        "label": "مطابقة قوية جدًا",
+        "color": "#16a34a"
+      },
+      {
+        "min": 70,
+        "max": 85,
+        "label": "مطابقة قوية",
+        "color": "#65a30d"
+      },
+      {
+        "min": 55,
+        "max": 70,
+        "label": "مطابقة متوسطة",
+        "color": "#d97706"
+      },
+      {
+        "min": 40,
+        "max": 55,
+        "label": "مطابقة ضعيفة",
+        "color": "#ea580c"
+      },
+      {
+        "min": 0,
+        "max": 40,
+        "label": "مطابقة منخفضة",
+        "color": "#dc2626"
+      }
     ],
-
     "related_major_families": [
-      ["علوم الحاسب", "هندسة البرمجيات", "هندسة الحاسب"],
-      ["نظم المعلومات", "تقنية المعلومات"],
-      ["الذكاء الاصطناعي", "علوم البيانات"],
-      ["الأمن السيبراني", "نظم المعلومات", "تقنية المعلومات"]
+      [
+        "علوم الحاسب",
+        "هندسة البرمجيات",
+        "هندسة الحاسب"
+      ],
+      [
+        "نظم المعلومات",
+        "تقنية المعلومات"
+      ],
+      [
+        "الذكاء الاصطناعي",
+        "علوم البيانات"
+      ],
+      [
+        "الأمن السيبراني",
+        "نظم المعلومات",
+        "تقنية المعلومات"
+      ]
     ]
   },
-
-
   "learning_actions": {
     "Python": {
       "action": "أكمل مسار أساسيات Python المتقدم",
@@ -326,7 +343,6 @@
       "estimated_hours": 15
     }
   },
-
   "opportunities": [
     {
       "opportunity_id": "opp_001",
@@ -335,15 +351,33 @@
       "description": "العمل على تحليل بيانات التشغيل وبناء لوحات معلومات لدعم اتخاذ القرار.",
       "required_major": "علوم الحاسب",
       "required_skills": [
-        { "name": "Python", "level": 3 },
-        { "name": "SQL", "level": 3 },
-        { "name": "Data Analysis", "level": 2 }
+        {
+          "name": "Python",
+          "level": 3
+        },
+        {
+          "name": "SQL",
+          "level": 3
+        },
+        {
+          "name": "Data Analysis",
+          "level": 2
+        }
       ],
       "preferred_skills": [
-        { "name": "Machine Learning", "level": 2 },
-        { "name": "Communication", "level": 2 }
+        {
+          "name": "Machine Learning",
+          "level": 2
+        },
+        {
+          "name": "Communication",
+          "level": 2
+        }
       ],
-      "interests": ["تحليل البيانات", "الذكاء الاصطناعي"],
+      "interests": [
+        "تحليل البيانات",
+        "الذكاء الاصطناعي"
+      ],
       "min_experience_level": 2,
       "location": "الظهران",
       "duration_months": 3,
@@ -356,15 +390,33 @@
       "description": "المشاركة في تطوير واجهات المستخدم لتطبيقات الشركة باستخدام تقنيات الويب الحديثة.",
       "required_major": "هندسة البرمجيات",
       "required_skills": [
-        { "name": "HTML/CSS", "level": 3 },
-        { "name": "JavaScript", "level": 3 },
-        { "name": "React", "level": 2 }
+        {
+          "name": "HTML/CSS",
+          "level": 3
+        },
+        {
+          "name": "JavaScript",
+          "level": 3
+        },
+        {
+          "name": "React",
+          "level": 2
+        }
       ],
       "preferred_skills": [
-        { "name": "Git", "level": 3 },
-        { "name": "UI/UX Design", "level": 2 }
+        {
+          "name": "Git",
+          "level": 3
+        },
+        {
+          "name": "UI/UX Design",
+          "level": 2
+        }
       ],
-      "interests": ["تطوير الويب", "واجهات المستخدم وتجربة المستخدم"],
+      "interests": [
+        "تطوير الويب",
+        "واجهات المستخدم وتجربة المستخدم"
+      ],
       "min_experience_level": 2,
       "location": "الرياض",
       "duration_months": 3,
@@ -377,15 +429,33 @@
       "description": "بناء نماذج تعلم آلة أولية لحلول المدن الذكية واختبارها على بيانات حقيقية.",
       "required_major": "الذكاء الاصطناعي",
       "required_skills": [
-        { "name": "Python", "level": 3 },
-        { "name": "Machine Learning", "level": 2 },
-        { "name": "SQL", "level": 2 }
+        {
+          "name": "Python",
+          "level": 3
+        },
+        {
+          "name": "Machine Learning",
+          "level": 2
+        },
+        {
+          "name": "SQL",
+          "level": 2
+        }
       ],
       "preferred_skills": [
-        { "name": "Deep Learning", "level": 2 },
-        { "name": "Cloud (AWS)", "level": 2 }
+        {
+          "name": "Deep Learning",
+          "level": 2
+        },
+        {
+          "name": "Cloud (AWS)",
+          "level": 2
+        }
       ],
-      "interests": ["الذكاء الاصطناعي", "البحث والتطوير"],
+      "interests": [
+        "الذكاء الاصطناعي",
+        "البحث والتطوير"
+      ],
       "min_experience_level": 3,
       "location": "تبوك",
       "duration_months": 6,
@@ -398,15 +468,33 @@
       "description": "المساعدة في مراقبة الأمن وتحليل الثغرات وحماية الأنظمة المصرفية.",
       "required_major": "الأمن السيبراني",
       "required_skills": [
-        { "name": "Cybersecurity Fundamentals", "level": 3 },
-        { "name": "Python", "level": 2 },
-        { "name": "SQL", "level": 2 }
+        {
+          "name": "Cybersecurity Fundamentals",
+          "level": 3
+        },
+        {
+          "name": "Python",
+          "level": 2
+        },
+        {
+          "name": "SQL",
+          "level": 2
+        }
       ],
       "preferred_skills": [
-        { "name": "Cloud (AWS)", "level": 2 },
-        { "name": "Communication", "level": 3 }
+        {
+          "name": "Cloud (AWS)",
+          "level": 2
+        },
+        {
+          "name": "Communication",
+          "level": 3
+        }
       ],
-      "interests": ["الأمن السيبراني", "الحوسبة السحابية"],
+      "interests": [
+        "الأمن السيبراني",
+        "الحوسبة السحابية"
+      ],
       "min_experience_level": 2,
       "location": "الرياض",
       "duration_months": 3,
@@ -419,15 +507,33 @@
       "description": "أتمتة عمليات النشر وإدارة الحاويات وتحسين موثوقية الأنظمة.",
       "required_major": "نظم المعلومات",
       "required_skills": [
-        { "name": "Docker", "level": 2 },
-        { "name": "Cloud (AWS)", "level": 2 },
-        { "name": "Git", "level": 3 }
+        {
+          "name": "Docker",
+          "level": 2
+        },
+        {
+          "name": "Cloud (AWS)",
+          "level": 2
+        },
+        {
+          "name": "Git",
+          "level": 3
+        }
       ],
       "preferred_skills": [
-        { "name": "Python", "level": 2 },
-        { "name": "Project Management", "level": 2 }
+        {
+          "name": "Python",
+          "level": 2
+        },
+        {
+          "name": "Project Management",
+          "level": 2
+        }
       ],
-      "interests": ["DevOps", "الحوسبة السحابية"],
+      "interests": [
+        "DevOps",
+        "الحوسبة السحابية"
+      ],
       "min_experience_level": 3,
       "location": "الرياض",
       "duration_months": 4,
@@ -440,15 +546,33 @@
       "description": "تطوير ميزات جديدة لتطبيق المتجر الإلكتروني باستخدام Flutter.",
       "required_major": "هندسة البرمجيات",
       "required_skills": [
-        { "name": "Mobile Development (Flutter)", "level": 2 },
-        { "name": "JavaScript", "level": 2 },
-        { "name": "Git", "level": 2 }
+        {
+          "name": "Mobile Development (Flutter)",
+          "level": 2
+        },
+        {
+          "name": "JavaScript",
+          "level": 2
+        },
+        {
+          "name": "Git",
+          "level": 2
+        }
       ],
       "preferred_skills": [
-        { "name": "UI/UX Design", "level": 3 },
-        { "name": "Testing & QA", "level": 2 }
+        {
+          "name": "UI/UX Design",
+          "level": 3
+        },
+        {
+          "name": "Testing & QA",
+          "level": 2
+        }
       ],
-      "interests": ["تطوير تطبيقات الجوال", "واجهات المستخدم وتجربة المستخدم"],
+      "interests": [
+        "تطوير تطبيقات الجوال",
+        "واجهات المستخدم وتجربة المستخدم"
+      ],
       "min_experience_level": 2,
       "location": "الرياض",
       "duration_months": 3,
@@ -461,15 +585,33 @@
       "description": "تنظيف وتحليل البيانات الإحصائية وإعداد تقارير مساندة للقرارات.",
       "required_major": "علوم البيانات",
       "required_skills": [
-        { "name": "Python", "level": 2 },
-        { "name": "SQL", "level": 3 },
-        { "name": "Data Analysis", "level": 3 }
+        {
+          "name": "Python",
+          "level": 2
+        },
+        {
+          "name": "SQL",
+          "level": 3
+        },
+        {
+          "name": "Data Analysis",
+          "level": 3
+        }
       ],
       "preferred_skills": [
-        { "name": "Machine Learning", "level": 1 },
-        { "name": "Communication", "level": 2 }
+        {
+          "name": "Machine Learning",
+          "level": 1
+        },
+        {
+          "name": "Communication",
+          "level": 2
+        }
       ],
-      "interests": ["تحليل البيانات", "البحث والتطوير"],
+      "interests": [
+        "تحليل البيانات",
+        "البحث والتطوير"
+      ],
       "min_experience_level": 2,
       "location": "الرياض",
       "duration_months": 5,
@@ -482,15 +624,33 @@
       "description": "تصميم واختبار واجهات المنتجات الرقمية وتحسين تجربة المستخدم.",
       "required_major": "نظم المعلومات",
       "required_skills": [
-        { "name": "UI/UX Design", "level": 3 },
-        { "name": "HTML/CSS", "level": 2 },
-        { "name": "Communication", "level": 3 }
+        {
+          "name": "UI/UX Design",
+          "level": 3
+        },
+        {
+          "name": "HTML/CSS",
+          "level": 2
+        },
+        {
+          "name": "Communication",
+          "level": 3
+        }
       ],
       "preferred_skills": [
-        { "name": "JavaScript", "level": 1 },
-        { "name": "Project Management", "level": 2 }
+        {
+          "name": "JavaScript",
+          "level": 1
+        },
+        {
+          "name": "Project Management",
+          "level": 2
+        }
       ],
-      "interests": ["واجهات المستخدم وتجربة المستخدم", "إدارة المنتجات"],
+      "interests": [
+        "واجهات المستخدم وتجربة المستخدم",
+        "إدارة المنتجات"
+      ],
       "min_experience_level": 1,
       "location": "الرياض",
       "duration_months": 3,
@@ -503,15 +663,33 @@
       "description": "دعم فِرق البنية التحتية السحابية ونشر الخدمات ومراقبتها.",
       "required_major": "تقنية المعلومات",
       "required_skills": [
-        { "name": "Cloud (AWS)", "level": 3 },
-        { "name": "Docker", "level": 2 },
-        { "name": "Git", "level": 2 }
+        {
+          "name": "Cloud (AWS)",
+          "level": 3
+        },
+        {
+          "name": "Docker",
+          "level": 2
+        },
+        {
+          "name": "Git",
+          "level": 2
+        }
       ],
       "preferred_skills": [
-        { "name": "Python", "level": 2 },
-        { "name": "Testing & QA", "level": 1 }
+        {
+          "name": "Python",
+          "level": 2
+        },
+        {
+          "name": "Testing & QA",
+          "level": 1
+        }
       ],
-      "interests": ["الحوسبة السحابية", "DevOps"],
+      "interests": [
+        "الحوسبة السحابية",
+        "DevOps"
+      ],
       "min_experience_level": 3,
       "location": "الرياض",
       "duration_months": 6,
@@ -524,18 +702,426 @@
       "description": "المساهمة في تطوير وتحسين نماذج التعلم الآلي في بيئة إنتاجية.",
       "required_major": "الذكاء الاصطناعي",
       "required_skills": [
-        { "name": "Python", "level": 4 },
-        { "name": "Machine Learning", "level": 3 },
-        { "name": "Deep Learning", "level": 2 }
+        {
+          "name": "Python",
+          "level": 4
+        },
+        {
+          "name": "Machine Learning",
+          "level": 3
+        },
+        {
+          "name": "Deep Learning",
+          "level": 2
+        }
       ],
       "preferred_skills": [
-        { "name": "Cloud (AWS)", "level": 3 },
-        { "name": "Communication", "level": 3 }
+        {
+          "name": "Cloud (AWS)",
+          "level": 3
+        },
+        {
+          "name": "Communication",
+          "level": 3
+        }
       ],
-      "interests": ["الذكاء الاصطناعي", "البحث والتطوير"],
+      "interests": [
+        "الذكاء الاصطناعي",
+        "البحث والتطوير"
+      ],
       "min_experience_level": 4,
       "location": "الرياض",
       "duration_months": 6,
+      "is_paid": true
+    },
+    {
+      "opportunity_id": "opp_011",
+      "company": "سابك",
+      "position": "متدرب تحليل بيانات",
+      "description": "تحليل البيانات التشغيلية وإعداد تقارير ولوحات معلومات لدعم اتخاذ القرار.",
+      "required_major": "علوم البيانات",
+      "required_skills": [
+        {
+          "name": "Python",
+          "level": 2
+        },
+        {
+          "name": "SQL",
+          "level": 2
+        },
+        {
+          "name": "Data Analysis",
+          "level": 3
+        }
+      ],
+      "preferred_skills": [
+        {
+          "name": "Machine Learning",
+          "level": 2
+        },
+        {
+          "name": "Communication",
+          "level": 2
+        }
+      ],
+      "interests": [
+        "تحليل البيانات",
+        "البحث والتطوير"
+      ],
+      "min_experience_level": 2,
+      "location": "الجبيل",
+      "duration_months": 4,
+      "is_paid": true
+    },
+    {
+      "opportunity_id": "opp_012",
+      "company": "بنك الرياض",
+      "position": "متدرب تقنية معلومات",
+      "description": "دعم الأنظمة التقنية والمشاركة في تطوير وتحسين الخدمات الرقمية.",
+      "required_major": "تقنية المعلومات",
+      "required_skills": [
+        {
+          "name": "SQL",
+          "level": 2
+        },
+        {
+          "name": "Git",
+          "level": 2
+        },
+        {
+          "name": "Python",
+          "level": 2
+        }
+      ],
+      "preferred_skills": [
+        {
+          "name": "Cloud (AWS)",
+          "level": 2
+        },
+        {
+          "name": "Communication",
+          "level": 2
+        }
+      ],
+      "interests": [
+        "الحوسبة السحابية",
+        "DevOps"
+      ],
+      "min_experience_level": 1,
+      "location": "الرياض",
+      "duration_months": 3,
+      "is_paid": true
+    },
+    {
+      "opportunity_id": "opp_013",
+      "company": "معادن",
+      "position": "متدرب ذكاء اصطناعي",
+      "description": "المشاركة في تطوير حلول ذكية لتحليل البيانات وتحسين العمليات.",
+      "required_major": "الذكاء الاصطناعي",
+      "required_skills": [
+        {
+          "name": "Python",
+          "level": 3
+        },
+        {
+          "name": "Machine Learning",
+          "level": 2
+        },
+        {
+          "name": "Data Analysis",
+          "level": 2
+        }
+      ],
+      "preferred_skills": [
+        {
+          "name": "Deep Learning",
+          "level": 1
+        },
+        {
+          "name": "SQL",
+          "level": 2
+        }
+      ],
+      "interests": [
+        "الذكاء الاصطناعي",
+        "تحليل البيانات"
+      ],
+      "min_experience_level": 2,
+      "location": "الرياض",
+      "duration_months": 4,
+      "is_paid": true
+    },
+    {
+      "opportunity_id": "opp_014",
+      "company": "زين السعودية",
+      "position": "متدرب أمن سيبراني",
+      "description": "المشاركة في مراقبة الأنظمة وتحليل المخاطر والثغرات الأمنية.",
+      "required_major": "الأمن السيبراني",
+      "required_skills": [
+        {
+          "name": "Cybersecurity Fundamentals",
+          "level": 3
+        },
+        {
+          "name": "Python",
+          "level": 2
+        },
+        {
+          "name": "SQL",
+          "level": 2
+        }
+      ],
+      "preferred_skills": [
+        {
+          "name": "Cloud (AWS)",
+          "level": 2
+        },
+        {
+          "name": "Communication",
+          "level": 2
+        }
+      ],
+      "interests": [
+        "الأمن السيبراني",
+        "الحوسبة السحابية"
+      ],
+      "min_experience_level": 2,
+      "location": "الرياض",
+      "duration_months": 3,
+      "is_paid": true
+    },
+    {
+      "opportunity_id": "opp_015",
+      "company": "شركة الاتصالات المتكاملة",
+      "position": "متدرب حوسبة سحابية",
+      "description": "دعم البنية التحتية السحابية والمساعدة في نشر ومراقبة الخدمات.",
+      "required_major": "تقنية المعلومات",
+      "required_skills": [
+        {
+          "name": "Cloud (AWS)",
+          "level": 2
+        },
+        {
+          "name": "Docker",
+          "level": 2
+        },
+        {
+          "name": "Git",
+          "level": 2
+        }
+      ],
+      "preferred_skills": [
+        {
+          "name": "Python",
+          "level": 2
+        },
+        {
+          "name": "Testing & QA",
+          "level": 1
+        }
+      ],
+      "interests": [
+        "الحوسبة السحابية",
+        "DevOps"
+      ],
+      "min_experience_level": 2,
+      "location": "الرياض",
+      "duration_months": 4,
+      "is_paid": true
+    },
+    {
+      "opportunity_id": "opp_016",
+      "company": "شركة جاهز",
+      "position": "متدرب تطوير برمجيات",
+      "description": "المشاركة في تطوير واختبار ميزات جديدة للمنصات والتطبيقات الرقمية.",
+      "required_major": "هندسة البرمجيات",
+      "required_skills": [
+        {
+          "name": "JavaScript",
+          "level": 3
+        },
+        {
+          "name": "Git",
+          "level": 2
+        },
+        {
+          "name": "HTML/CSS",
+          "level": 2
+        }
+      ],
+      "preferred_skills": [
+        {
+          "name": "React",
+          "level": 2
+        },
+        {
+          "name": "Testing & QA",
+          "level": 2
+        }
+      ],
+      "interests": [
+        "تطوير الويب",
+        "تطوير تطبيقات الجوال"
+      ],
+      "min_experience_level": 2,
+      "location": "الرياض",
+      "duration_months": 3,
+      "is_paid": true
+    },
+    {
+      "opportunity_id": "opp_017",
+      "company": "الخطوط السعودية",
+      "position": "متدرب نظم معلومات",
+      "description": "المساهمة في دعم الأنظمة الرقمية وتحليل متطلبات الأعمال وتحسين الخدمات التقنية.",
+      "required_major": "نظم المعلومات",
+      "required_skills": [
+        {
+          "name": "SQL",
+          "level": 2
+        },
+        {
+          "name": "Data Analysis",
+          "level": 2
+        },
+        {
+          "name": "Communication",
+          "level": 2
+        }
+      ],
+      "preferred_skills": [
+        {
+          "name": "Project Management",
+          "level": 2
+        },
+        {
+          "name": "Python",
+          "level": 1
+        }
+      ],
+      "interests": [
+        "تحليل البيانات",
+        "إدارة المنتجات"
+      ],
+      "min_experience_level": 1,
+      "location": "جدة",
+      "duration_months": 3,
+      "is_paid": true
+    },
+    {
+      "opportunity_id": "opp_018",
+      "company": "شركة تمارا",
+      "position": "متدرب تطوير واجهات",
+      "description": "تطوير وتحسين واجهات المنتجات الرقمية والمشاركة في بناء تجربة مستخدم فعالة.",
+      "required_major": "علوم الحاسب",
+      "required_skills": [
+        {
+          "name": "HTML/CSS",
+          "level": 3
+        },
+        {
+          "name": "JavaScript",
+          "level": 3
+        },
+        {
+          "name": "React",
+          "level": 2
+        }
+      ],
+      "preferred_skills": [
+        {
+          "name": "UI/UX Design",
+          "level": 2
+        },
+        {
+          "name": "Git",
+          "level": 2
+        }
+      ],
+      "interests": [
+        "تطوير الويب",
+        "واجهات المستخدم وتجربة المستخدم"
+      ],
+      "min_experience_level": 2,
+      "location": "الرياض",
+      "duration_months": 3,
+      "is_paid": true
+    },
+    {
+      "opportunity_id": "opp_019",
+      "company": "شركة أكوا باور",
+      "position": "متدرب علوم بيانات",
+      "description": "تحليل بيانات المشاريع وبناء نماذج وتقارير تساعد في تحسين الأداء.",
+      "required_major": "علوم البيانات",
+      "required_skills": [
+        {
+          "name": "Python",
+          "level": 3
+        },
+        {
+          "name": "Data Analysis",
+          "level": 3
+        },
+        {
+          "name": "SQL",
+          "level": 2
+        }
+      ],
+      "preferred_skills": [
+        {
+          "name": "Machine Learning",
+          "level": 2
+        },
+        {
+          "name": "Communication",
+          "level": 2
+        }
+      ],
+      "interests": [
+        "تحليل البيانات",
+        "الذكاء الاصطناعي"
+      ],
+      "min_experience_level": 2,
+      "location": "الرياض",
+      "duration_months": 4,
+      "is_paid": true
+    },
+    {
+      "opportunity_id": "opp_020",
+      "company": "شركة تكامل",
+      "position": "متدرب إدارة منتجات تقنية",
+      "description": "المشاركة في تحليل احتياجات المستخدمين وتطوير وتحسين المنتجات الرقمية.",
+      "required_major": "نظم المعلومات",
+      "required_skills": [
+        {
+          "name": "Communication",
+          "level": 3
+        },
+        {
+          "name": "Project Management",
+          "level": 2
+        },
+        {
+          "name": "Data Analysis",
+          "level": 2
+        }
+      ],
+      "preferred_skills": [
+        {
+          "name": "UI/UX Design",
+          "level": 2
+        },
+        {
+          "name": "SQL",
+          "level": 1
+        }
+      ],
+      "interests": [
+        "إدارة المنتجات",
+        "واجهات المستخدم وتجربة المستخدم"
+      ],
+      "min_experience_level": 1,
+      "location": "الرياض",
+      "duration_months": 3,
       "is_paid": true
     }
   ]
